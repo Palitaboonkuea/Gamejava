@@ -18,7 +18,7 @@ public class explosion {
         height=30;
         
         try {
-            BufferedImage spritesheet = ImageIO.read(getClass().getResourceAsStream("explosion.png"));
+            BufferedImage spritesheet = ImageIO.read(getClass().getResourceAsStream("/image/explosion.png"));
             sprites = new BufferedImage[6];
             for(int i = 0; i < sprites.length; i++) {
                 sprites[i] = spritesheet.getSubimage(i * width,0,width,height);
